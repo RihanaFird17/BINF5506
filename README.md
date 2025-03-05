@@ -1,2 +1,1 @@
-BINF5506 2
-BINF5506 3
+BINF5506 Rihana Firdouz Mohamed
