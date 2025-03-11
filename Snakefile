@@ -12,6 +12,7 @@ SNPEFF_DATA_DIR=f"{SNPEFF_DIR}/data/reference_db"
  
 rule all:
     input: 
+        results/.dirs_created, 
         f"{RAW_DIR}/reference.fasta"
  
 rule create_dirs:
