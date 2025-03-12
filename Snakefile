@@ -64,3 +64,4 @@ rule extract_sequence:
         fastq-dump -X 10000 {RAW_DIR}/{SRA}/{SRA}.sra -O {RAW_DIR}
         echo Extracted sequencing data!
         """
+
