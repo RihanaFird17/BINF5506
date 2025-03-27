@@ -1,0 +1,19 @@
+Building DAG of jobs...
+MissingInputException in rule all in file /home/ubuntu/BINF5506_Project_1_RM/Snakefile, line 16:
+Missing input files for rule all:
+    affected files:
+        results/raw/reference.dict
+        results/raw/reference.fasta.sa
+        results/annotated/annotated_variants.vcf
+        results/qc/SRR1972739_fastqc.html
+        results/snpEff/snpEff.config
+        results/aligned/dedup.bam
+        results/raw/reference.fasta.amb
+        results/aligned/dedup.bam.bai
+        results/raw/reference.fasta.pac
+        results/variants/filtered_variants.vcf
+        results/snpEff/snpEff_reference_db.txt
+        results/snakemake/.s3_upload_done
+        results/raw/reference.fasta.fai
+        results/raw/reference.fasta.ann
+        results/raw/reference.fasta.bwt

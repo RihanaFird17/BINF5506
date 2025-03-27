@@ -1,0 +1,37 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count
+---------  -------
+all              1
+upload_s3        1
+total            2
+
+Select jobs to execute...
+
+[Thu Mar 27 04:34:20 2025]
+rule upload_s3:
+    input: results/raw/reference.fasta, results/raw/SRR1972739/SRR1972739.sra, results/raw/SRR1972739.fastq, results/aligned/dedup.bam, results/variants/filtered_variants.vcf, results/annotated/annotated_variants.vcf
+    output: results/snakemake/.s3_upload_done
+    jobid: 18
+    reason: Missing output files: results/snakemake/.s3_upload_done
+    resources: tmpdir=/tmp
+
+[Thu Mar 27 04:34:24 2025]
+Finished job 18.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Thu Mar 27 04:34:24 2025]
+localrule all:
+    input: results/snakemake/.dirs_created, results/raw/reference.fasta, results/raw/SRR1972739/SRR1972739.sra, results/raw/SRR1972739.fastq, results/qc/SRR1972739_fastqc.html, results/raw/reference.fasta.fai, results/raw/reference.dict, results/raw/reference.fasta.amb, results/raw/reference.fasta.ann, results/raw/reference.fasta.bwt, results/raw/reference.fasta.pac, results/raw/reference.fasta.sa, results/aligned/dedup.bam, results/aligned/dedup.bam.bai, results/variants/filtered_variants.vcf, results/annotated/annotated_variants.vcf, results/snpEff/snpEff_reference_db.txt, results/snpEff/snpEff.config, results/snakemake/.s3_upload_done
+    jobid: 0
+    reason: Input files updated by another job: results/snakemake/.s3_upload_done
+    resources: tmpdir=/tmp
+
+[Thu Mar 27 04:34:24 2025]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2025-03-27T043420.271434.snakemake.log
