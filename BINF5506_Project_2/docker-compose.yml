@@ -1,0 +1,10 @@
+version: "3.8"
+ 
+services:
+  ebola:
+    image: ebola_bash 
+    build: .
+    volumes:
+      - ./results:/code/results  # Mount ./results directory to /code/results in the container
+    command: ["snakemake", "--cores", "4", "--latency-wait", "300"]
+              # bash /code/genomic_analysis_script.sh

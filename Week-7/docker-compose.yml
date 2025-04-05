@@ -1,0 +1,13 @@
+version: "3.8"
+ 
+services:
+  ebola:
+    image: binf5506
+    build: .
+    command: env
+    environment:
+      - ENV=Ebola
+    volumes:
+      - .:/code
+ 
+ 
